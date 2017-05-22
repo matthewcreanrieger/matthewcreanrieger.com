@@ -1,0 +1,133 @@
+@font-face {
+	font-family: Raleway;
+	src: url("assets/Raleway-Thin.otf");
+}
+@font-face {
+	font-family: ElegantLux;
+	src: url("assets/ElegantLux-Mager.otf");
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #36454f;
+}
+
+video { width: 375px; }
+
+.logo a {
+	font-family: Raleway;
+	font-size: 80px;
+	color: #36454f;
+	text-decoration: none;
+	z-index: 3;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.info {
+	position: fixed;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	z-index: 3;
+}
+.info a {
+	font-family: ElegantLux;
+	font-size: 28px;
+	letter-spacing: 5px;
+	color: white;
+	text-decoration: none;
+	background: #36454f;
+	border: .5px solid black;
+	padding: 4px;
+	margin-top: 8px;
+	margin-right: 6px;
+	width: 180px;
+	display: inline-block;
+}
+.info a:hover { color: orange; }
+
+.lCtnr { text-align: center; }
+.lCtnr div {
+	padding: 1.5%;
+	border-radius: 100px;
+	position: relative;
+	width: 375px;
+	display: inline-block;
+	overflow: hidden;
+}
+.lCtnr a {
+	font-family: ElegantLux;
+	font-size: 50px;
+	letter-spacing: 0px;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	left: .75%;
+	width: 100%;
+	text-align: center;
+	top: 95px;
+}
+
+.hdrBkg {
+	border-bottom: 1px solid black;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: .95;
+	z-index: 1;
+}
+
+.stretch {
+	width: 100%;
+	height: 100%;
+}
+
+video { cursor: pointer; }
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+@media screen and (min-width: 1151px) {
+	.logo a {
+		position: fixed;
+		left: 80px;
+		top: 25px;
+	}
+
+	.info {
+		top: 20px;
+		right: -140px;
+		width: 60%;
+	}
+
+	.lCtnr { margin-top: 200px; }
+	
+	.hdrBkg { height: 150px; }
+}
+
+@media screen and (max-width: 1150px) {
+	.logo {
+		text-align: center;
+	}
+	.logo a { 
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.info { position: relative;}
+
+	.lCtnr { margin-top: 25px; }
+	
+	.hdrBkg {
+		height: 225px;
+		position: absolute;
+	}
+}

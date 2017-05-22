@@ -1,47 +1,28 @@
-var figure = $("#v1").hover(hoverVideo, hideVideo);
-var figure = $("#v2").hover(hoverVideo, hideVideo);
-var figure = $("#v3").hover(hoverVideo, hideVideo);
-var figure = $("#v4").hover(hoverVideo, hideVideo);
-var figure = $("#v5").hover(hoverVideo, hideVideo);
-var figure = $("#v6").hover(hoverVideo, hideVideo);
+var figure = $(".v").hover(hoverVideo, exitVideo);
 
 function hoverVideo(e) {  
 	$('video', this).get(0).muted = false;
+	$('a', this).get(0).style.color = "#ADD8E6";
 }
 
-function hideVideo(e) {
+function exitVideo(e) {
    $('video', this).get(0).muted = true;
+   $('a', this).get(0).style.color = "white";
+   $('a', this).get(1).style.color = "white";
 }
 
-// function rndBkgImgDsply () {
-// 	var bkgImg = new Array (
-// 		"assets/bkgImg/1.jpg",
-// 		"assets/bkgImg/2.jpg",
-// 		"assets/bkgImg/3.jpg",
-// 		"assets/bkgImg/4.jpg",
-// 		"assets/bkgImg/5.jpg",
-// 		"assets/bkgImg/6.jpg",
-// 		"assets/bkgImg/7.jpg",
-// 		"assets/bkgImg/8.jpg",
-// 		"assets/bkgImg/9.jpg",
-// 		"assets/bkgImg/10.jpg",
-// 		"assets/bkgImg/11.jpg",
-// 		"assets/bkgImg/12.jpg",
-// 		"assets/bkgImg/13.jpg",
-// 		"assets/bkgImg/14.jpg",
-// 		"assets/bkgImg/15.jpg",
-// 		"assets/bkgImg/16.jpg",
-// 		"assets/bkgImg/17.jpg",
-// 		"assets/bkgImg/18.jpg",
-// 		"assets/bkgImg/19.jpg",
-// 		"assets/bkgImg/20.jpg",
-// 		"assets/bkgImg/21.jpg",
-// 		"assets/bkgImg/22.jpg",
-// 		"assets/bkgImg/23.jpg",
-// 		"assets/bkgImg/24.jpg"
-// 	);
-// 	var rndBkgImg = Math.floor ( Math.random () * bkgImg.length );
-// 	document.getElementById ( "bkgImg" ) .src = bkgImg [ rndBkgImg ];
-// }
-// 
-// window.onload = rndBkgImgDsply ();
+var figure = $(".p").hover(hoverImage, exitImage);
+
+function hoverImage(e) {
+	$('a', this).get(0).style.color = "#ADD8E6";
+	$('a', this).get(1).style.color = "#ADD8E6";
+}
+
+function exitImage(e) {
+   $('a', this).get(0).style.color = "white";
+   $('a', this).get(1).style.color = "white";
+}
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	alert("This site is only optimized for desktop computers;\nno mobile version is currently available.");
+}
