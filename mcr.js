@@ -3,9 +3,6 @@ var figure = $(".v").hover(hoverVideo, exitVideo);
 function hoverVideo(e) {  
 	$('video', this).get(0).muted = false;
 	$('a', this).get(0).style.color = "gold";
-	$('video', this).click(function() {
-      $('.rock').unbind('mouseout');
-	});
 }
 
 function exitVideo(e) {
@@ -54,11 +51,11 @@ var bkgImg = new Array (
 );
 var bkgImgIndex = 0;
 	
-function rndBkgImgDsply (x) {
+function bkgImgDsply (x) {
 	bkgImgIndex = bkgImgIndex + x;
 	if (bkgImgIndex < 0) bkgImgIndex = bkgImg.length - 1;
 	if (bkgImgIndex > bkgImg.length - 1) bkgImgIndex = 0;
 	document.getElementById ( "bkgImg" ) .src = bkgImg[bkgImgIndex];
 }
 
-window.onload = rndBkgImgDsply (0);
+window.onload = bkgImgDsply (0);

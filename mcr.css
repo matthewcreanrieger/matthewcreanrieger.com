@@ -76,7 +76,7 @@ a:hover + img, .i:hover {
 .cCtnr {
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 250px;
+	margin-top: 200px;
 }
 .cCtnr div {
 	padding: 1.5%;
@@ -118,11 +118,23 @@ a:hover + img, .i:hover {
 .left a { color: white; }
 .left a:hover { color: gold; }
 
-.right img {
+.mockup img {
 	margin-top: 150px;
 	width: 600px;
 	margin-left: -325px;
 	margin-right: -100px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.slide img {
+	margin-top: 250px;
+	width: 420px;
+	margin-left: -325px;
+	margin-right: 25px;
 	position: relative;
 	display: inline-block;
 	float: right;
@@ -202,10 +214,16 @@ video::-webkit-media-controls {
 
 @media screen and (min-width: 1151px) and (max-width: 1350px) {
 	.left { width: 80%; }
-	.right img{
+	.mockup img{
 		float: none;
 		margin-left: 75px;
 		margin-right: -500px;
+	}
+	.slide img{
+		float: none;
+		margin-top: 175px;
+		margin-left: 100px;
+		margin-right: -325px;
 	}
 }
 
@@ -238,10 +256,16 @@ video::-webkit-media-controls {
 		padding-left: 35px;
 		top: 0px;
 	}
-	.right img{
+	.mockup img{
 		float: none;
 		margin-top: 0px;
 		margin-left: -135px;
 		margin-right: -385px;
+	}
+	.slide img{
+		float: none;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: -325px;
 	}
 }
