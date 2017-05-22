@@ -91,6 +91,28 @@ a:hover + img, .i:hover {
 	pointer-events: none;
 }
 
+.left {
+	font-size: 16px;
+	text-align: left;
+	width: 45%;
+	top: 150px;
+	position: relative;
+	padding-left: 75px;
+}
+.left p { margin-top: -20px; }
+.left a { color: white; }
+.left a:hover { color: #ADD8E6; }
+
+.right img {
+	padding: 1.5%;
+	position: relative;
+	width: 275px;
+	top: 150px;
+	position: relative;
+	float: right;
+}
+
+
 .p a {
 	top: 70px;
 	font-size: 45px;
@@ -141,6 +163,7 @@ video::-webkit-media-controls {
 	.lCtnr { margin-top: 200px; }
 	
 	.hdrBkg { height: 150px; }
+	
 }
 
 @media screen and (max-width: 1150px) {
@@ -167,4 +190,6 @@ video::-webkit-media-controls {
 		height: 225px;
 		position: absolute;
 	}
+	
+	.left { width: 90%; }
 }
