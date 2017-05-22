@@ -27,10 +27,20 @@
 		</div>
 		
 		<div class="cCtnr">
-			<div class="v" OnClick="window.location.replace('portfolio/kkm.html'), _self">
+			<div class="v" id="myVideo" OnClick="window.location.replace('portfolio/kkm.html')">
 				<a>Entrepreneur</a>
 				<video autoplay loop muted><source src="assets/vid/v1.m4v"></video>
 			</div>
+<!-- 
+			<button onclick="enableMute()" type="button">Mute sound</button>
+<script>
+var vid = document.getElementById("myVideo");
+
+function enableMute() { 
+    vid.muted = true;
+}
+</script>
+ -->
 			<div class="v">
 				<a>Product Enthusiast</a>
 				<video autoplay loop muted><source src="assets/vid/v2.m4v"></video>
@@ -43,7 +53,7 @@
 				<a>Traveler</a>
 				<video autoplay loop muted><source src="assets/vid/v4.m4v"></video>
 			</div>
-			<div class="v">	
+			<div class="v" OnClick="window.location.replace('etc/photos.html')">	
 				<a>Photographer</a>
 				<video autoplay loop muted><source src="assets/vid/v5.m4v"></video>
 			</div>
