@@ -25,10 +25,6 @@ function exitImage(e) {
 
 function mobileAlert(){
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-		alert("This site is only optimized for desktop computers.\nNo mobile version is currently available.");
+		alert("yThis site is only optimized for desktop computers.\nNo mobile version is currently available.");
 	}
 }
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-		alert("xThis site is only optimized for desktop computers.\nNo mobile version is currently available.");
-	}
