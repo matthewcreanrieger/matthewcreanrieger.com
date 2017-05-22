@@ -2,7 +2,10 @@ var figure = $(".v").hover(hoverVideo, exitVideo);
 
 function hoverVideo(e) {  
 	$('video', this).get(0).muted = false;
-	$('a', this).get(0).style.color = "#ADD8E6";
+	$('a', this).get(0).style.color = "gold";
+	$('video', this).click(function() {
+      $('.rock').unbind('mouseout');
+	});
 }
 
 function exitVideo(e) {
@@ -14,8 +17,8 @@ function exitVideo(e) {
 var figure = $(".p").hover(hoverImage, exitImage);
 
 function hoverImage(e) {
-	$('a', this).get(0).style.color = "#ADD8E6";
-	$('a', this).get(1).style.color = "#ADD8E6";
+	$('a', this).get(0).style.color = "gold";
+	$('a', this).get(1).style.color = "gold";
 }
 
 function exitImage(e) {
