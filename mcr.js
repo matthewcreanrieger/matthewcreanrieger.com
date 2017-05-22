@@ -23,6 +23,6 @@ function exitImage(e) {
    $('a', this).get(1).style.color = "white";
 }
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && window.location.href == 'index.html') {
 	alert("This site is only optimized for desktop computers;\nno mobile version is currently available.");
 }
