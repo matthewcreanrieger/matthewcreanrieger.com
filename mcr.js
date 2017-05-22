@@ -22,3 +22,9 @@ function exitImage(e) {
    $('a', this).get(0).style.color = "white";
    $('a', this).get(1).style.color = "white";
 }
+
+function mobileAlert(){
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		alert("This site is only optimized for desktop computers.\nNo mobile version is currently available.");
+	}
+}
