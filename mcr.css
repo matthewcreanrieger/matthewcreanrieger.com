@@ -95,7 +95,7 @@ a:hover + img, .i:hover {
 	left: .75%;
 	width: 100%;
 	text-align: center;
-	top: 95px;
+	top: 90px;
 	pointer-events: none;
 }
 
@@ -133,7 +133,7 @@ a:hover + img, .i:hover {
 .p44 img {
 	margin-top: 250px;
 	width: 420px;
-	margin-left: -325px;
+	margin-left: -335px;
 	margin-right: 25px;
 	position: relative;
 	display: inline-block;
@@ -153,6 +153,14 @@ a:hover + img, .i:hover {
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+.vid {
+	margin-top: 250px;
+	margin-right: 50px;
+	float: right;
+	display: inline-block;
+}
+
 
 .p a {
 	top: 70px;
@@ -238,6 +246,12 @@ video::-webkit-media-controls {
 		margin-right: -325px;
 	}
 	.floragraph img { margin-top: 150px; }
+	.vid {
+		width: 100%;
+   	text-align: center;
+   	margin: 0 auto;
+		margin-top: 150px;
+	}
 }
 
 @media screen and (max-width: 1150px) {
@@ -282,4 +296,10 @@ video::-webkit-media-controls {
 		margin-right: -325px;
 	}
 	.floragraph img { margin-top: 25px; }
+	.vid {
+		width: 100%;
+   	text-align: center;
+   	margin: 0 auto;
+		margin-top: 25px;
+	}
 }
