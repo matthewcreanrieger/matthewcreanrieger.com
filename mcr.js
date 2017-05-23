@@ -1,7 +1,7 @@
 var figure = $(".v").hover(hoverVideo, exitVideo);
 
 function hoverVideo(e) {  
-	$('video', this).get(0).muted = false;
+// 	$('video', this).get(0).muted = false;
 	if ($('video', this).get(0).id == "v2" || $('video', this).get(0).id == "v6") $('video', this).get(0).volume = .7;
 	else if ($('video', this).get(0).id != "v5") $('video', this).get(0).volume = .4;
 	$('a', this).get(0).style.color = "gold";

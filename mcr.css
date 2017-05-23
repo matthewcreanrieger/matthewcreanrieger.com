@@ -9,7 +9,6 @@
 
 body {
 	font-family: ElegantLux;
-/* 	overflow-x: hidden; */
 	color: white;
 	background-color: #262626;
 }
@@ -173,7 +172,6 @@ a.sub {
 
 .hdrBkg {
 	border-bottom: 1px solid black;
-	background-color: white;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -188,7 +186,7 @@ a.sub {
 }
 
 #current {
-	color:grey;
+	color: grey;
 }
 
 video::-webkit-media-controls {
