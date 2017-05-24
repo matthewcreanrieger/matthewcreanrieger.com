@@ -120,6 +120,7 @@ a.sub { font-size: 25px; }
 	position: relative;
 	padding-left: 75px;
 	float: left;
+	line-height: 25px;
 }
 .left a { color: white; }
 .left a:hover { color: gold; }
