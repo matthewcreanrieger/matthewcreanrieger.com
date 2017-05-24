@@ -25,33 +25,12 @@ function exitImage(e) {
    $('a', this).get(1).style.color = "white";
 }
 
-var bkgImg = new Array (
-		"assets/bkgImg/1.jpg",
-		"assets/bkgImg/2.jpg",
-		"assets/bkgImg/3.jpg",
-		"assets/bkgImg/4.jpg",
-		"assets/bkgImg/5.jpg",
-		"assets/bkgImg/6.jpg",
-		"assets/bkgImg/7.jpg",
-		"assets/bkgImg/8.jpg",
-		"assets/bkgImg/9.jpg",
-		"assets/bkgImg/10.jpg",
-		"assets/bkgImg/11.jpg",
-		"assets/bkgImg/12.jpg",
-		"assets/bkgImg/13.jpg",
-		"assets/bkgImg/14.jpg",
-		"assets/bkgImg/15.jpg",
-		"assets/bkgImg/16.jpg",
-		"assets/bkgImg/17.jpg",
-		"assets/bkgImg/18.jpg",
-		"assets/bkgImg/19.jpg",
-		"assets/bkgImg/20.jpg",
-		"assets/bkgImg/21.jpg",
-		"assets/bkgImg/22.jpg",
-		"assets/bkgImg/23.jpg",
-		"assets/bkgImg/24.jpg"
-);
-var bkgImgIndex = 0;
+var bkgImg = new Array ();
+for (i = 1; i < 90; i++) { 
+		bkgImg.push('assets/bkgImgs/' + i + '.jpg');
+};
+
+var bkgImgIndex = Math.floor ( Math.random () * bkgImg.length );
 	
 function bkgImgDsply (x) {
 	bkgImgIndex = bkgImgIndex + x;
