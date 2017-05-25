@@ -149,9 +149,9 @@ a.sub { font-size: 25px; }
 
 .slides img {
 	margin-top: 25px;
-	width: calc(0px + 35%);
-	margin-left: -375px;
-	margin-right: 25px;
+	width: calc(35px + 27%);
+	margin-left: -390px;
+	margin-right: 40px;
 	position: relative;
 	display: inline-block;
 	float: right;
