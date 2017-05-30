@@ -1,3 +1,7 @@
+
+
+
+
 var figure = $(".v").hover(hoverVideo, exitVideo);
 
 function hoverVideo(e) {  
@@ -40,9 +44,3 @@ function bkgImgDsply (x) {
 }
 
 window.onload = bkgImgDsply (0);
-
-window.onpageshow = function(event) {
-    if (event.persisted) {
-        window.location.reload() 
-    }
-};
