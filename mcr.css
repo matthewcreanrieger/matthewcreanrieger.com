@@ -147,6 +147,17 @@ a.sub { font-size: 25px; }
 	margin-right: 50px;
 }
 
+.me img {
+	width: calc(75px + 20%);
+	margin-top: 25px;
+	margin-right: 5%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 .slides img {
 	margin-top: 25px;
 	width: calc(35px + 27%);
