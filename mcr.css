@@ -14,9 +14,11 @@ body {
 	overflow-x: hidden;
 }
 
-p {font-size: 20px; 
-word-spacing: 2px;
-line-height: 28px;}
+p {
+	font-size: 20px; 
+	word-spacing: 2px;
+	line-height: 28px;
+}
 
 video, .i {
 	width: 375px;
