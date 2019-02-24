@@ -44,7 +44,13 @@
 					<div id="welcome-14" hidden>Velkommen</div>
 					<div id="welcome-14" hidden>&#3618;&#3636;&#3609;&#3604;&#3637;&#3605;&#3657;&#3629;&#3609;&#3619;&#3633;&#3610;</div>
 				</h1>
-				<p>I built this website not only to showcase my professional experience, but also as a portfolio piece in and of itself. I opted to build the site from scratch, rather than to use a website builder, in order to demonstrate my ability to self-teach new skills.<br><br>I am not a graphic designer nor a professional developer, but everything on this website reflects my original work. The code for this site can be viewed on <a href="https://github.com/matthewcreanrieger/portfolio/tree/gh-pages" target="_blank">my GitHub profile</a>.<a href="about.php" target="_blank">php testing</a></p>
+				<p>
+				<?php
+					include 'vars.php';
+					echo "My first PHP script!";
+					echo $tester;
+				?>
+				I built this website not only to showcase my professional experience, but also as a portfolio piece in and of itself. I opted to build the site from scratch, rather than to use a website builder, in order to demonstrate my ability to self-teach new skills.<br><br>I am not a graphic designer nor a professional developer, but everything on this website reflects my original work. The code for this site can be viewed on <a href="https://github.com/matthewcreanrieger/portfolio/tree/gh-pages" target="_blank">my GitHub profile</a>.</p>
 			</div>
 			
 			<div class="me">
