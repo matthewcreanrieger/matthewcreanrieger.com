@@ -1,0 +1,30 @@
+USER DATA
+Creating an account is optional. If you choose to not create an account, Spor will not collect any user data. Having an account allows you to: - Recover your data if you replace your device
+- Recover your data if you temporarily delete Spor
+- Track multiple Spor profiles from one device
+
+Spor utilizes Firebase (firebase.google.com) to store user data. Data is encrypted in transit and stored as encrypted data on Google's servers. However, administrators (me) can see the data in plain text. Therefore, please DO NOT record sensitive information (credit card numbers, personal contact information, etc.) while using Spor. The database is not actively monitored, but any sensitive information identified will be redacted.
+
+Spor was designed to record day-to-day transactions and track personal finances. The information entered by users that is stored on Firebase's servers includes the following:
+
+- Email Address
+- Total Budget entered for the chosen Budgeting Period
+- Chosen Budgeting Period
+- Quantity of Transactions recorded
+- Monetary amount assigned to each Transaction
+- Description assigned to each Transaction
+- Date assigned to each Transaction
+- Category assigned to each Transaction
+- Quantity of Transaction Categories recorded
+- Monetary amount assigned to each Transaction Category
+- Title assigned to each Transaction Category
+
+
+ABOUT ME Hi there! Thank you for checking out my app. I'm an independent developer from Cincinnati. This app was built primarily as a portfolio piece. Please direct any questions, comments, or suggestions to Escargot.Internationale@gmail.com. A website will soon be available with additional information regarding Spor and other Escargot projects.
+ Support me on Patreon at: https://www.patreon.com/escargot_internationale
+
+
+CREDITS Spor utilizes the following fonts: - "Menlo" by Jim Lyles
+- "Metropolis" by Chris Simpson  Spor was created using Xcode.
+
+Spor is an Escargot software application. Please direct any questions, comments, or suggestions to Escargot.Internationale@gmail.com.
